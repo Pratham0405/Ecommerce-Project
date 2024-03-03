@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 import pickle5 as pickle
 
-file1 = open('ecommercewebsite.pkl', 'rb')
-model = pickle.load(file1)
-file1.close()
+file = open('ecommercewebsite.pkl', 'rb')
+model = pickle.load(file)
+file.close()
 
 
 
