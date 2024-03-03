@@ -8,7 +8,6 @@ rf = pickle.load(file1)
 file1.close()
 
 
-
 data = pd.read_csv("traineddata.csv")
 
 #data['IPS'].unique()
@@ -40,7 +39,7 @@ query = np.array([ASL, TOA, TOW, LOM])
 
 query = query.reshape(1, 4)
 
-prediction = int(np.exp(rf.predict(query)[0]))
+prediction = int(model.predict(query)[0])
 
 st.title("Predicted Yearly Amount spent by customer is" +
              str(prediction-50)+"₹" + " to " + str(prediction+50)+"₹")
