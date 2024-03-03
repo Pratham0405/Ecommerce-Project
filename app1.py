@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 import pickle5 as pickle
 
-file = open('ecommercewebsite.pkl', 'rb')
-model = pickle.load(file)
-file.close()
+file1 = open('pipe2.pkl', 'rb')
+rf = pickle.load(file1)
+file1.close()
 
 
 
@@ -40,7 +40,7 @@ query = np.array([ASL, TOA, TOW, LOM])
 
 query = query.reshape(1, 4)
 
-prediction = int(np.exp(model.predict(query)[0]))
+prediction = int(np.exp(rf.predict(query)[0]))
 
 st.title("Predicted Yearly Amount spent by customer is" +
              str(prediction-50)+"₹" + " to " + str(prediction+50)+"₹")
