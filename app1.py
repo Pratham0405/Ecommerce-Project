@@ -3,9 +3,10 @@ import pandas as pd
 import numpy as np
 import pickle5 as pickle
 
-file = open('pipe2.pkl', 'rb')
-model = pickle.load(file)
-file.close()
+file1 = open('ecommercewebsite.pkl', 'rb')
+rf = pickle.load(file1)
+file1.close()
+
 
 
 data = pd.read_csv("traineddata.csv")
