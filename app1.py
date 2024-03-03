@@ -4,7 +4,7 @@ import numpy as np
 import pickle5 as pickle
 
 file1 = open('ecommercewebsite.pkl', 'rb')
-rf = pickle.load(file1)
+model = pickle.load(file1)
 file1.close()
 
 
