@@ -9,7 +9,7 @@ import joblib
 
 
 # Load your trained model
-model = joblib.load('pipe2.pkl')
+model = joblib.load('pipe4.pkl')
 
 # Define the function to make predictions
 def predict(years_of_membership, avg_session_length, time_on_app, time_on_website):
