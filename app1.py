@@ -21,7 +21,7 @@ def predict(avg_session_length, time_on_app, time_on_website,length_of_membershi
 
 # Create the Streamlit app
 def main():
-    st.title("Ecommerce Customer Revenue Prediction")
+    st.title("Prediction of Yearly Amount spent by customer")
     st.write("This app predicts the yearly amount spent by a customer based on their input.")
 
     # Add input fields for user data
@@ -33,7 +33,7 @@ def main():
     # Add a button to make predictions
     if st.button("Predict"):
         prediction = predict(avg_session_length, time_on_app, time_on_website,length_of_membership)
-        st.success(f"The predicted yearly amount spent is: ${prediction:.2f}")
+        st.success(f"Yearly Amount spent by customer is: ${prediction:.2f}")
 
 # Run the app
 if __name__ == "__main__":
