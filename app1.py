@@ -13,7 +13,7 @@ def predict(avg_session_length, time_on_app, time_on_website,length_of_membershi
         
         'ASL': [avg_session_length],
         'TOA': [time_on_app],
-        'TOW': [time_on_website]
+        'TOW': [time_on_website],
         'LOM': [length_of_membership],
     })
     prediction = model.predict(input_data)
