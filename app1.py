@@ -73,6 +73,10 @@ elif selection == "Data Visualization":
         st.pyplot()
     else:
         st.write("No numerical columns found in the dataset.")
+        
+        
+        st.set_option('deprecation.showPyplotGlobalUse', False)
+
 
 
 # Modeling
