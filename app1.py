@@ -1,4 +1,4 @@
-import streamlit as st
+aimport streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -65,17 +65,19 @@ elif selection == "Data Visualization":
         # Histogram
         st.subheader("Histogram")
         plt.hist(data[selected_column])
+        st.set_option('deprecation.showPyplotGlobalUse', False)
         st.pyplot()
 
         # Boxplot
         st.subheader("Boxplot")
         sns.boxplot(data[selected_column])
+        st.set_option('deprecation.showPyplotGlobalUse', False)
         st.pyplot()
     else:
         st.write("No numerical columns found in the dataset.")
         
         
-        st.set_option('deprecation.showPyplotGlobalUse', False)
+        
 
 
 
